@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #8083FF;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+sup, sub{
+    font-size: 1.25rem;
+}
+
+div.container {
+    width: 90%;
+    background-color: #E3E0F3;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+div.hydroinfo {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       margin-bottom: 20px;
+       max-width: 75%;
+}
+
+
+h2.title {
+    background-color: #00B1DF;
+    text-align: center;
+    border-left: 8px solid #00008B;
+}
+
+p.hydrogen_electroconfig {
+    text-indent: 12%;
+}
+
+div.listing_elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+div.btn_box {
+     margin-bottom: 20px;
+}
+button {
+    outline: none;
+    border: 2px solid black;
+    padding: 2px 2px 3px 3px;
+    border-radius: 5px;
+    margin: 0%;
+    font-size: 1.75rem;
+    
+
+}
+
+
+/* For description */
+
+p#extra {
+   display: none;
+
+}
+
+
+
+
+abbr {
+	color: red;
+    cursor: pointer;
+}
+
+abbr[title] {
+	position: relative;
+	
+	/* ensure consistent styling across browsers */
+	text-decoration: underline solid rgb(228, 17, 17 ); 
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+	content: attr(title);
+	
+	/* position tooltip like the native one */
+	position: absolute;
+	left: -120px;
+	bottom: 30px;
+	width: auto;
+	white-space: nowrap;
+	
+	/* style tooltip */
+	background-color: #1e1e1e;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+	font-size: 14px;
+	padding: 3px 5px;
+}
+
+
+
+
+
+
+div.img_box {
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+    
+}
+
+div.img_box img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+dl.dyk {
+    background-color: #9ff1cf87;
+    padding: 8px 6px 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 8px #787AA7;
+    margin-bottom: 20px; 
+}
+
+dl.dyk h5 {
+    text-align: center;
+    background-color: #7ea6c3;
+    color: white;
+    font-family: helvetica;
+    border-radius: 8px;
+}
+
+dl.dyk dt {
+    text-align: left;
+    margin-top: 10px;
+} 
+
+div.dyk dd {
+    text-indent: 10%;
+    text-align: justify;  /* For Edge */
+    text-align-last: right;
+}
+
+
+div.isotype p.iso_defn{
+    text-indent: 8%;
+}
+
+div.isotype ol , ol{
+       padding-left: 15px;
+}
+
+
+
+div.table_box {
+    overflow-x: auto;
+}
+
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+
+sup.pro_power::before {
+       content: "1";
+       position: absolute;
+}
+
+sup.deu_power::before {
+    content: "2";
+    position: absolute;
+ }
+
+sup.tri_power::before {
+   content: "3";
+   position: absolute;
+}
+
+ol.uses_list li {
+    list-style: lower-roman;
+}
+
+
+div.iso_types h6 {
+    margin-top: 20px;
+}
+
+
+div.iso_types h5{
+   margin: 30px 0px 0px;
+}
+
+div.hydrogen_forms, 
+div.hydrogen_forms h5,
+div.hydrogen_forms h6  {
+      margin-top: 10px;
+}
+
+div.hydrogen_forms ol.nas_list {   /* Nascent hydrogen more reactive than ordinary hydrogen : points */
+    list-style-type: lower-latin;
+}
+
+
+
+div.hydrogen_forms ol.nas_que {     /* que-Nascent hydrogen is more powerful reducing agent */
+    list-style-type: lower-roman;
+}
+
+
+
+
+
+@media screen and (min-width: 620px) {
+    
+    *{
+        font-size: 1.9rem;
+        line-height: 1.31579;
+    }
+}
