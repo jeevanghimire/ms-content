@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
 }
 
 html {
@@ -15,13 +16,24 @@ html {
 
 body {
     background-color: #8083FF;
-    font-size: 1.6rem;
-    line-height: 1.25;
+
 }
+/* ----Start----------- Universal Styling */
 
 sup, sub{
-    font-size: 1.25rem;
+    font-size: 0.75rem;
 }
+
+
+ol{
+    padding-left: 15px;
+}
+
+ol.list_loweralpha li {
+    list-style-type: lower-alpha;
+}
+
+/* ----End----------- Universal Styling */
 
 div.container {
     width: 90%;
@@ -65,7 +77,7 @@ button {
     padding: 2px 2px 3px 3px;
     border-radius: 5px;
     margin: 0%;
-    font-size: 1.75rem;
+    font-size: 1.15rem;
     
 
 }
@@ -101,8 +113,8 @@ abbr[title]:focus::after {
 	position: absolute;
 	left: -120px;
 	bottom: 30px;
-	width: auto;
-	white-space: nowrap;
+	max-width: 320px;
+	/* white-space: nowrap; */
 	
 	/* style tooltip */
 	background-color: #1e1e1e;
@@ -162,13 +174,10 @@ div.dyk dd {
 }
 
 
-div.isotype p.iso_defn{
+div.isotype p.spacing{
     text-indent: 8%;
 }
 
-div.isotype ol , ol{
-       padding-left: 15px;
-}
 
 
 
@@ -208,6 +217,9 @@ ol.uses_list li {
     list-style: lower-roman;
 }
 
+ol.nas_que p{
+    text-indent: 5%;
+} 
 
 div.iso_types h6 {
     margin-top: 20px;
@@ -234,6 +246,66 @@ div.hydrogen_forms ol.nas_que {     /* que-Nascent hydrogen is more powerful red
     list-style-type: lower-roman;
 }
 
+div.allotrope {
+    margin-top: 25px;
+}
+
+p.spacing {
+    text-indent: 5%;
+}
+
+p.spacing3 {
+    text-indent: 3%;
+}
+
+ol.paraconversion li{
+    list-style-type: disc;
+}
+
+div.que_hydrogen{
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 7px;
+} 
+
+div.que_hydrogen h3 {
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+/* div.que_hydrogen p.question{
+    position: relative;
+    
+} */
+
+div.que_hydrogen p.question span.marks {
+    float: right;
+    font-size: 1.45rem;
+}
+
+div.que_hydrogen ol li {
+    margin-top: 10px;
+}
+
+div.diff_table  {
+   margin-top: 10px;
+}
+
+div.diff_table table.atomic_nascent {
+    border-collapse: collapse;
+}
+
+div.diff_table table.atomic_nascent th,
+div.diff_table table.atomic_nascent td {
+    border: 1px solid black;
+}
+
+div.diff_table table.atomic_nascent th {
+    background-color: #eee;
+}
+
 
 
 
@@ -243,5 +315,13 @@ div.hydrogen_forms ol.nas_que {     /* que-Nascent hydrogen is more powerful red
     *{
         font-size: 1.9rem;
         line-height: 1.31579;
+    }
+
+    sup, sub{
+        font-size: 1.25rem;
+    }
+
+    button {
+          font-size: 1.75rem;
     }
 }
