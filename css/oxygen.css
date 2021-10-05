@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #8083FF;
+
+}
+/* ----Start----------- Universal Styling */
+
+sup, sub{
+    font-size: 0.75rem;
+}
+
+
+ol{
+    padding-left: 15px;
+}
+
+ol.list_loweralpha li {
+    list-style-type: lower-alpha;
+    margin: 10px 0px 0px 10px;
+}
+
+span.bold {
+  font-weight: bolder;
+
+}
+
+p.spacing {
+    text-indent: 5%;
+}
+
+p.spacing3 {
+    text-indent: 3%;
+}
+
+p.spacing12 {
+    text-indent: 12%;
+}
+
+
+/* ----End----------- Universal Styling */
+
+div.container {
+    width: 90%;
+    background-color: #E3E0F3;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+h2.title {
+    background-color: #00B1DF;
+    text-align: center;
+    border-left: 8px solid #00008B;
+}
+
+
+div.elementinfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    max-width: 75%;
+}
+
+
+div.listing_elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+dl.dyk {
+    background-color: #9ff1cf87;
+    padding: 8px 6px 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 8px #787AA7;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+dl.dyk h5 {
+    text-align: center;
+    background-color: #7ea6c3;
+    color: white;
+    font-family: helvetica;
+    border-radius: 8px;
+}
+
+dl.dyk dt,
+h4, h5 {
+    text-align: left;
+    margin-top: 10px;
+} 
+
+
+
+
+div.btn_box {
+    margin-bottom: 20px;
+}
+button {
+   outline: none;
+   border: 2px solid black;
+   padding: 2px 2px 3px 3px;
+   border-radius: 5px;
+   margin: 0%;
+   font-size: 1.15rem;
+   
+
+}
+
+
+/* For description */
+
+p#extra {
+  display: none;
+
+}
+
+
+
+div.que_oxygen{
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 7px;
+    margin-top: 20px;
+} 
+
+div.que_oxygen h3 {
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+
+div.que_hydrogen p.question span.marks {
+    float: right;
+    font-size: 1.45rem;
+}
+
+div.que_hydrogen ol li {
+    margin-top: 10px;
+}
+
+/* --Start---------------Styling----------------Reactions */
+
+.reaction {
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.normal_reaction {
+   text-align: left;
+   overflow-x: auto;
+   padding: 1rem 1.5rem 1.2rem 1.5rem;
+   background: #eee;
+} 
+.arrow {
+    display: inline-block;
+    position: relative;
+    height: 1px; 
+    width: 30px;
+    background: black;
+    margin-right: 10px;
+    top: -4px;
+        
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 100%;
+    border-left: 5px solid black;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: translate(0, -50%); 
+}
+
+
+
+.reactant,
+.product {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.rightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 25px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+/*-----------Start------Styling long right arrow */
+.longrightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 50px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+.longrightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.longrightarrow::before{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 8px;
+}
+
+.longrightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+/*------End----Styling Right long arrow */
+
+
+.rightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.reactant::after,
+.rightarrow::before,
+.product::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 6px;
+}
+
+
+.reactant::after {
+    --top: 150%;
+    left: 15%;
+    content: var(--reactant-label);
+}
+
+.rightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+
+.product::after {
+    --top: 150%;
+    left: 20%;
+    content: var(--reactant-label);
+}
+
+
+
+/* ----End-----------------------Styling-----------Reactions */
+
+
+div.que_oxygen{
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 7px;
+    margin-top: 20px;
+} 
+
+div.que_oxygen h3 {
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+
+div.que_oxygen p.question span.marks {
+    float: right;
+    font-size: 1.45rem;
+}
+
+div.que_oxygen ol li {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*----------- Media Queries ---------------------------*/
+
+
+
+
+
+
+
+@media screen and (min-width: 620px) {
+    
+    *{
+        font-size: 1.9rem;
+        line-height: 1.31579;
+    }
+
+    sup, sub{
+        font-size: 1.25rem;
+    }
+
+    button {
+          font-size: 1.75rem;
+    }
+
+
+
+
+
+/* --Start---------------Styling----------------Reactions */
+
+.reaction {
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.normal_reaction {
+   text-align: left;
+   overflow-x: auto;
+   padding: 1rem 1.5rem 1.2rem 1.5rem;
+   background: #eee;
+} 
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    height: 3px; 
+    width: 50px;
+    background: black;
+    margin-right: 10px;
+    top: 0px;
+        
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 100%;
+    border-left: 10px solid black;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    transform: translate(0, -50%); 
+}
+
+.arrow::before {
+    content: var(--reactant-label);
+    font-size: 10px;
+    top: -500%;
+    position: absolute;
+    font-weight: 600;
+}
+
+
+.reactant,
+.product {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.rightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 25px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+
+.rightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.reactant::after,
+.rightarrow::before,
+.product::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 12px;
+}
+
+.reactant::after {
+    --top: 150%;
+    content: var(--reactant-label);
+}
+
+.rightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+.product::after {
+    --top: 150%;
+    content: var(--reactant-label);
+}
+
+/*-----------Start------Styling long right arrow */
+.longrightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 80px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+.longrightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.longrightarrow::before{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 12px;
+}
+
+.longrightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+/*------End----Styling Right long arrow */
+
+
+/* ----End-----------------------Styling-----------Reactions */
+
+
+
+}

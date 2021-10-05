@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+    font-size: 62.5%;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #8083FF;
+
+}
+/* ----Start----------- Universal Styling */
+
+sup, sub{
+    font-size: 0.75rem;
+}
+
+
+ol{
+    padding-left: 15px;
+}
+
+ol.list_loweralpha li {
+    list-style-type: lower-alpha;
+}
+
+span.bold {
+  font-weight: bold;
+
+}
+
+p.spacing {
+    text-indent: 5%;
+}
+
+p.spacing3 {
+    text-indent: 3%;
+}
+
+
+/* ----End----------- Universal Styling */
+
+div.container {
+    width: 90%;
+    background-color: #E3E0F3;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+div.elementinfo {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       margin-bottom: 20px;
+       max-width: 75%;
+}
+
+
+h2.title {
+    background-color: #00B1DF;
+    text-align: center;
+    border-left: 8px solid #00008B;
+}
+
+p.hydrogen_electroconfig {
+    text-indent: 12%;
+}
+
+div.listing_elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+div.btn_box {
+     margin-bottom: 20px;
+}
+button {
+    outline: none;
+    border: 2px solid black;
+    padding: 2px 2px 3px 3px;
+    border-radius: 5px;
+    margin: 0%;
+    font-size: 1.15rem;
+    
+
+}
+
+
+/* For description */
+
+p#extra {
+   display: none;
+
+}
+
+
+
+
+abbr {
+	color: red;
+    cursor: pointer;
+}
+
+abbr[title] {
+	position: relative;
+	
+	/* ensure consistent styling across browsers */
+	text-decoration: underline solid rgb(228, 17, 17 ); 
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+	content: attr(title);
+	
+	/* position tooltip like the native one */
+	position: absolute;
+	/* left: -120px; */
+	bottom: 30px;
+	max-width: 320px;
+	/* white-space: nowrap; */
+	
+	/* style tooltip */
+	background-color: #1e1e1e;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+	font-size: 1.35rem;
+	padding: 3px 5px;
+}
+
+
+
+
+
+
+div.img_box {
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+    
+}
+
+div.img_box img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+dl.dyk {
+    background-color: #9ff1cf87;
+    padding: 8px 6px 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 8px #787AA7;
+    margin-bottom: 20px; 
+}
+
+dl.dyk h5 {
+    text-align: center;
+    background-color: #7ea6c3;
+    color: white;
+    font-family: helvetica;
+    border-radius: 8px;
+}
+
+dl.dyk dt {
+    text-align: left;
+    margin-top: 10px;
+} 
+
+
+
+div.isotype p.spacing{
+    text-indent: 8%;
+}
+
+
+
+
+div.table_box {
+    overflow-x: auto;
+}
+
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+}
+
+table td a{
+    color: black;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+
+sup.pro_power::before {
+       content: "1";
+       position: absolute;
+}
+
+sup.deu_power::before {
+    content: "2";
+    position: absolute;
+ }
+
+sup.tri_power::before {
+   content: "3";
+   position: absolute;
+}
+
+ol.uses_list li {
+    list-style: lower-roman;
+}
+
+ol.nas_que p{
+    text-indent: 5%;
+} 
+
+div.iso_types h6 {
+    margin-top: 20px;
+}
+
+
+div.iso_types h5{
+   margin: 30px 0px 0px;
+}
+
+div.hydrogen_forms, 
+div.hydrogen_forms h5,
+div.hydrogen_forms h6  {
+      margin-top: 15px;
+}
+
+/* --Start---------------Styling----------------Reactions */
+
+.reaction {
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    height: 1px; 
+    width: 30px;
+    background: black;
+    margin-right: 10px;
+    top: 0px;
+        
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 100%;
+    border-left: 5px solid black;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: translate(0, -50%); 
+}
+
+.normal_reaction {
+   text-align: left;
+   overflow-x: auto;
+   padding: 1rem 1.5rem 1.2rem 1.5rem;
+   background: #eee;
+} 
+
+.reactant,
+.product {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.rightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 25px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+
+.rightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.reactant::after,
+.rightarrow::before,
+.product::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 6px;
+}
+
+.reactant::after {
+    --top: 150%;
+    left: 15%;
+    content: var(--reactant-label);
+}
+
+.rightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+.product::after {
+    --top: 150%;
+    left: 20%;
+    content: var(--reactant-label);
+}
+
+
+
+/* ----End-----------------------Styling-----------Reactions */
+
+div.hydrogen_forms ol.nas_list {   /* Nascent hydrogen more reactive than ordinary hydrogen : points */
+    list-style-type: lower-latin;
+}
+
+
+
+div.hydrogen_forms ol.nas_que {     /* que-Nascent hydrogen is more powerful reducing agent */
+    list-style-type: lower-roman;
+}
+
+div.allotrope {
+    margin-top: 25px;
+}
+
+div.allotrope ol li{
+    margin-top: 15px;
+}
+
+div.allotrope h5 {
+    margin-top: 15px;
+}
+
+div.allotrope ol.paraconversion li{
+    margin-top: 5px;
+}
+
+
+ol.paraconversion li{
+    list-style-type: disc;
+}
+
+div.que_hydrogen{
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px 7px;
+    margin-top: 20px;
+} 
+
+div.que_hydrogen h3 {
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+
+div.que_hydrogen p.question span.marks {
+    float: right;
+    font-size: 1.45rem;
+}
+
+div.que_hydrogen ol li {
+    margin-top: 10px;
+}
+
+div.diff_table  {
+   margin-top: 10px;
+}
+
+div.diff_table table.atomic_nascent {
+    border-collapse: collapse;
+}
+
+div.diff_table table.atomic_nascent th,
+div.diff_table table.atomic_nascent td {
+    border: 1px solid black;
+}
+
+div.diff_table table.atomic_nascent th {
+    background-color: #eee;
+}
+
+
+
+
+@media screen and (min-width: 620px) {
+    
+    *{
+        font-size: 1.9rem;
+        line-height: 1.31579;
+    }
+
+    sup, sub{
+        font-size: 1.25rem;
+    }
+
+    button {
+          font-size: 1.75rem;
+    }
+
+
+.reactant::after,
+.rightarrow::before,
+.product::after{
+    font-size: 12px;
+}
+
+
+/* --Start---------------Styling----------------Reactions */
+
+.reaction {
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    height: 3px; 
+    width: 50px;
+    background: black;
+    margin-right: 10px;
+    top: -4px;
+        
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 100%;
+    border-left: 10px solid black;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    transform: translate(0, -50%); 
+}
+
+.normal_reaction {
+   text-align: left;
+   overflow-x: auto;
+   padding: 1rem 1.5rem 1.2rem 1.5rem;
+   background: #eee;
+} 
+
+.reactant,
+.product {
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.rightarrow {
+    --margin: 4px;
+    --height: 1.5px;
+    --width: 25px;             /* actual width will be double of this value */
+    --arrow-head-height: 5px;  /* actual height will be double of this value */
+    --arrow-head-width: 10px;
+    
+    position: relative;
+    margin: 0 calc(var(--arrow-head-width) + var(--margin)) 0 var(--margin);
+    border: var(--height) solid black;
+    border-right-width: var(--width);
+    border-left-width: var(--width);
+}
+
+
+.rightarrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: var(--width);
+    border-left: var(--arrow-head-width) solid black;
+    border-top: var(--arrow-head-height) solid transparent;
+    border-bottom: var(--arrow-head-height) solid transparent;
+    transform: translate(0, -50%);
+}
+
+
+.reactant::after,
+.rightarrow::before,
+.product::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, var(--top));
+    font-size: 12px;
+}
+
+.reactant::after {
+    --top: 150%;
+    left: 15%;
+    content: var(--reactant-label);
+}
+
+.rightarrow::before {
+    --top: -110%;
+    content: var(--reactant-label);
+}
+
+.product::after {
+    --top: 150%;
+    left: 20%;
+    content: var(--reactant-label);
+}
+
+
+
+/* ----End-----------------------Styling-----------Reactions */
+
+
+}
